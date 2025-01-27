@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: odib <odib@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: zmourtab <zakariamourtaban@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 10:20:02 by zmourtab          #+#    #+#             */
-/*   Updated: 2024/09/03 12:31:38 by odib             ###   ########.fr       */
+/*   Updated: 2025/01/27 14:41:15 by zmourtab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ typedef struct s_list
 	int				cost;
 }					t_list;
 
+int					matches(char *pattern, char *string);
 char				*ft_strstr(const char *big, const char *little);
 char				*ft_strnew(int len);
 int					ft_isspace(char c);
