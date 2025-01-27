@@ -6,7 +6,7 @@
 /*   By: zmourtab <zakariamourtaban@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:50:46 by zmourtab          #+#    #+#             */
-/*   Updated: 2024/06/20 10:47:52 by zmourtab         ###   ########.fr       */
+/*   Updated: 2024/09/05 20:35:55 by zmourtab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *s)
 	int		i;
 
 	i = 0;
+	if (s == NULL)
+		return (NULL);
 	while (s[i] != '\0')
 		i++;
 	sr = malloc(i + 1);
@@ -31,4 +33,12 @@ char	*ft_strdup(const char *s)
 	}
 	sr[i] = '\0';
 	return (sr);
+}
+
+char	*ft_strnew(int len)
+{
+	char	*str;
+
+	str = malloc(len * sizeof(char));
+	return (str);
 }

@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: odib <odib@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: zmourtab <zakariamourtaban@gmail.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/10 12:25:38 by zmourtab          #+#    #+#             */
-/*   Updated: 2024/09/03 12:29:15 by odib             ###   ########.fr       */
+/*   Created: 2024/07/06 14:15:35 by zmourtab          #+#    #+#             */
+/*   Updated: 2024/07/06 14:16:42 by zmourtab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_bzero(void *s, size_t n)
+int	ft_isspace(char c)
 {
-	unsigned char	*str;
-	size_t			i;
-
-	str = s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = 0;
-		i++;
-	}
+	if ((c >= 9 && c <= 13) || c == 32)
+		return (1);
+	return (0);
 }
